@@ -1,0 +1,80 @@
+The quality control manager of a manufacturing company has randomly selected 50 of the
+company’s recent projects. Each project has four attributes: 
+1. A PIP number that identifies each project uniquely,
+2. A Quality score,
+3. A Speed, which is the time duration in days during which the project was completed,
+and
+4. The cost of the project.
+The manager then assigns an overall score (from zero to 7) to each project depending on
+how many of the three criteria have been satisfied by that project.
+• The Quality criterion is satisfied (event Q) if Quality > 500.
+• The Speed criterion is satisfied (Event S) if Speed < 13 days.
+• The Cost criterion is satisfied (event C) if cost < $234,000.
+1. If none of the three criteria is satisfied, then a score of zero is given to that project.
+2. If only the Quality criterion is satisfied but none of the other two are satisfied, then a
+score of 1 is given to that project.
+3. If only the Speed criterion is satisfied but none of the other two are satisfied, then a
+score of 2 is given to that project.
+4. If only the Cost criterion is satisfied but none of the other two are satisfied, then a
+score of 3 is given to that project.
+5. If Quality and Speed are satisfied but the Cost is not satisfied, then score = 4
+6. If Quality and Cost are satisfied but the Speed is not satisfied, then score = 5.
+7. If Speed and Cost are satisfied but the Quality is not satisfied, then score = 6.
+8. If all three criteria are satisfied, then score = 7.
+Using the data provided in the attached Excel workbook and the project description,
+complete, in R, the tasks 1 -5 as outlined below.
+The Venn diagram below describes the sample space (∪) and the three events. The values
+inside circles in each of the eight regions of the Venn diagram indicates the score
+corresponding to that region.
+Part 1
+Use R to calculate the missing values in the following table. Note that you will include the
+table in your report.
+Notation for the Probability of the given event:
+Count: Probability/Percentage
+P(Q )
+P(S )
+P(C ) 
+Part 2
+Use R to calculate the missing values in the following table. Note that you will include the
+table in your report.
+Part 3
+The Venn diagram of this project management procedure consists of 8 regions that have
+been numbered 0 through 7 and according to the score gained by the project. Use the Venn
+diagram provided in the Excel workbook by first copying the Venn diagram into Microsoft
+Paint and then using Paint to populate the eight regions with the counts of the projects that
+are located in each region. Copy the resulting Venn diagram into your report.
+Part 4
+Follow Steps 1 and 2 and place the results in your report. Complete Steps 3 and 4 in R and
+place the results in your report.
+1. In the word document, write the mathematical notation and the formula for
+calculating the probabilities of the events outlined below.
+Notation for the Probability of the given
+event in terms of events Q, S, and C: 
+Count: Probability/Percentage
+P(Score = 0)
+P(Score = 1)
+P(Score = 2)
+P(Score = 3)
+P(Score = 4)
+P(Score = 5)
+P(Score = 6)
+P(Score = 7)
+2. Write the mathematical notation for the event in your report;
+3. Using R, calculate the total counts for each event;
+4. Using R, calculate the probability (or percentage) for each event.
+The events are:
+a) Of those who satisfied Cost, what percentage also satisfied Speed?
+b) Of those who satisfied Quality, what percentage also satisfied Cost?
+c) Of those who satisfied Quality, what percentage also satisfied Speed but did not
+satisfy the Cost?
+d) Of those who satisfied Cost, what percentage also satisfied Speed but did not satisfy
+the Quality?
+e) Of those who did not satisfy Speed, what percentage satisfied Quality and Cost?
+f) What percentage satisfied exactly two of the three criteria?
+g) Of those who satisfied at least one of the three criteria, what percentage satisfied
+exactly one criterion?
+h) Of those who did not satisfy Cost, what percentage satisfied the Speed criterion?
+Part 5
+In the word document, write a minimum of 800 words to describe your analyses and
+findings. Explain how the results that you have obtained in your analyses can be used to
+improve performance for all future projects. 
